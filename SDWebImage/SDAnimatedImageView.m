@@ -580,7 +580,7 @@ static NSUInteger SDDeviceFreeMemory() {
     }
     
 #if SD_UIKIT
-    NSTimeInterval duration = displayLink.duration * displayLink.frameInterval;
+    NSTimeInterval duration = displayLink.duration * displayLink.preferredFramesPerSecond;
 #endif
     NSUInteger totalFrameCount = self.totalFrameCount;
     NSUInteger currentFrameIndex = self.currentFrameIndex;
